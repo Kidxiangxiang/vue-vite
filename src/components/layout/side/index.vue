@@ -41,7 +41,7 @@ const overSize = () => {
 overSize()
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .el-menu {
   border-right: none;
 }

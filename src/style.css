@@ -101,3 +101,24 @@ button:focus-visible {
 .flex-box {
   display:flex;
 }
+
+/* 搜索按钮防抖处理 */
+.sub-btn {
+  animation: throttle 1s step-end forwards;
+}
+.sub-btn:active {
+  animation: none;
+}
+@keyframes throttle {
+  from {
+      pointer-events: none;
+  }
+
+  to {
+      pointer-events: all;
+  }
+}
+
+.form-box {
+  border-bottom: 1px solid #E1E4EB;
+}

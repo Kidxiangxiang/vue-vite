@@ -2,6 +2,7 @@
   <div v-if="!item.hidden">
     <template v-if="hasOneShowingChild(item.children, item) && (!onlyOneChild.children || onlyOneChild.noShowingChildren) && !item.alwaysShow">
       <el-menu-item :index="onlyOneChild.meta.index" @click="toLink(item.path)">
+        <component :is='onlyOneChild.meta.icon'></component>
         <span>{{ onlyOneChild.meta.title }}</span>
       </el-menu-item>
     </template>
@@ -19,6 +20,16 @@
     </el-sub-menu>
   </div>
 </template>
+
+<script>
+import User from '../icon/user.vue'
+
+export default {
+  components: {
+    User
+  }
+}
+</script>
 
 <script setup>
 import { ref } from 'vue'

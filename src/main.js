@@ -14,7 +14,6 @@ const components = [
 ]
 
 components.forEach(component => {
-  console.log(component)
   app.component(component.name, component)
 })
 

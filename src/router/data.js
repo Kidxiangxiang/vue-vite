@@ -50,7 +50,7 @@ const routesData = [
         path: '/user',
         name: 'User',
         isTag: true,
-        meta: { title: '员工管理', isTag: true, index: '3' },
+        meta: { title: '员工管理', isTag: true, index: '3', icon: 'User' },
         component: () => import('../views/user/index.vue')
       }
     ]
