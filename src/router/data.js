@@ -22,7 +22,7 @@ const routesData = [
       }
     ]
   },
-  {
+  /* {
     path: '/setting',
     redirect: '/setting/index',
     component: Layout, 
@@ -39,6 +39,19 @@ const routesData = [
         name: 'SettingUser',
         meta: { title: '用户设置', isTag: true, index: '2-2' },
         component: () => import('@/views/setting/user/index.vue'),
+      }
+    ]
+  }, */
+  {
+    path: '/user',
+    component: Layout, 
+    children: [
+      {
+        path: '/user',
+        name: 'User',
+        isTag: true,
+        meta: { title: '员工管理', isTag: true, index: '3' },
+        component: () => import('../views/user/index.vue')
       }
     ]
   }

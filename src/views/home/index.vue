@@ -67,7 +67,7 @@ onMounted(() => {
 
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 div {
   padding: 0;
   margin: 0;
@@ -76,12 +76,11 @@ div {
   padding: 0 10px 10px 10px;
   height: 400px;
   overflow-y: auto;
+  .box {
+    margin: 10px 0 0 0;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+  }
 }
-.list .box {
-  margin: 10px 0 0 0;
-  height: 30px;
-  background-color: #fff;
-  text-align: center;
-}
-
 </style>
