@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <div class="collapse" @click="setCollapse">
+    <!-- <div class="collapse" @click="setCollapse">
       <el-icon size="18"><Menu /></el-icon>
-    </div>
+    </div> -->
     
     <!-- <div class="breadcrumb-nav">
       <el-breadcrumb separator="/">

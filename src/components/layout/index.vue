@@ -42,7 +42,6 @@ provide('titleObj', titleObj)
 }
 
 .common-layout .container .main {
-  background-color: rgb(239 241 246);
   padding: 0;
   overflow: auto;
 }

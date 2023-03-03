@@ -1,8 +1,9 @@
 <template>
-  <div class="side">
+  <el-scrollbar wrap-class="scrollbar-wrapper">
     <el-menu
-      :default-active="systemStoreObj.menuActive" class="el-menu-vertical-demo" :collapse="systemStoreObj.isCollapse"
+      :default-active="systemStoreObj.menuActive" class="el-menu-vertical-demo"
       style="height: 100vh;" background-color="rgb(78 87 107)"
+      :collapse="systemStoreObj.isCollapse"
       text-color="rgb(153 153 153)" active-text-color="#ffffff"
       :router="false"
     >
@@ -13,7 +14,7 @@
         :basePath="route.path"
       />
     </el-menu>
-  </div>
+  </el-scrollbar>
 </template>
 
 <script setup>
@@ -38,7 +39,7 @@ const overSize = () => {
   }
 }
 
-overSize()
+// overSize()
 </script>
 
 <style lang="less" scoped>
@@ -47,5 +48,8 @@ overSize()
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 235px;
+}
+.scrollbar-wrapper {
+  overflow-x: hidden !important;
 }
 </style>
